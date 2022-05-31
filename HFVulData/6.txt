@@ -1,0 +1,28 @@
+External Library Calling(ELC): github.com/hyperledger/fabric/core/chaincode/shim
+External Library Calling(ELC): github.com/hyperledger/fabric/protos/peer
+Declaration of variables is not recommended in a structure(FD): ObjectType
+Declaration of variables is not recommended in a structure(FD): Name
+Declaration of variables is not recommended in a structure(FD): Color
+Declaration of variables is not recommended in a structure(FD): Size
+Declaration of variables is not recommended in a structure(FD): Owner
+Declaration of variables is not recommended in a structure(FD): Price
+Built-in functions are not recommended(UBF): new
+Built-in functions are not recommended(UBF): len
+Unhandled errors(UE): stub.PutPrivateData("collectionMarbles", colorNameIndexKey, value)
+Unhandled errors(UE): defer resultsIterator.Close()
+Unencrypted sensitive data(USD): crypto is not used
+Uninitialized storage pointer(USP): marbleDeleteInput
+Uninitialized storage pointer(USP): marbleToDelete
+Uninitialized storage pointer(USP): marbleTransferInput
+Uninitialized storage pointer(USP): marbleInput
+Comment headers insufficient for checking implementation and usage(CHICIU): Init function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): Invoke function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): initMarble function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): readMarble function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): readMarblePrivateDetails function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): delete function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): transferMarble function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): getMarblesByRange function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): queryMarblesByOwner function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): queryMarbles function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): getQueryResultForQueryString function without a comment description

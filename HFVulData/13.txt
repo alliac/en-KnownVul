@@ -1,0 +1,34 @@
+External Library Calling(ELC): github.com/hyperledger/fabric/core/chaincode/shim
+External Library Calling(ELC): github.com/hyperledger/fabric/protos/peer
+Declaration of variables is not recommended in a structure(FD): PatientName
+Declaration of variables is not recommended in a structure(FD): PatientGender
+Declaration of variables is not recommended in a structure(FD): PatientAge
+Declaration of variables is not recommended in a structure(FD): PatientNationality
+Declaration of variables is not recommended in a structure(FD): PatientIDType
+Declaration of variables is not recommended in a structure(FD): PatientIDNumber
+Declaration of variables is not recommended in a structure(FD): PatientTelephone
+Declaration of variables is not recommended in a structure(FD): PatientAddress
+Declaration of variables is not recommended in a structure(FD): DoctorName
+Declaration of variables is not recommended in a structure(FD): DoctorID
+Declaration of variables is not recommended in a structure(FD): DoctorHospitalName
+Declaration of variables is not recommended in a structure(FD): DoctorHosptialID
+Declaration of variables is not recommended in a structure(FD): MRID
+Declaration of variables is not recommended in a structure(FD): MRAdmissionDate
+Declaration of variables is not recommended in a structure(FD): MRDischargeDate
+Declaration of variables is not recommended in a structure(FD): MRPaymentType
+Declaration of variables is not recommended in a structure(FD): MRPatientID
+Declaration of variables is not recommended in a structure(FD): MRDoctors
+Declaration of variables is not recommended in a structure(FD): MRDiagnosis
+Built-in functions are not recommended(UBF): len
+Unused privacy data mechanism(UPDM): it is recommended to use the EMP-toolkit to encrypt the linked data
+There is a range query risks(RQR): GetHistoryForKey
+Uninitialized storage pointer(USP): newRecord
+Built-in functions are not recommended(UBF): new
+Unhandled errors(UE): defer resultsIterator.Close()
+Unhandled errors(UE): json.Unmarshal(response.Value, &_medicalRecord)
+Unencrypted sensitive data(USD): crypto is not used
+Uninitialized storage pointer(USP): _medicalRecord
+Comment headers insufficient for checking implementation and usage(CHICIU): Init function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): Invoke function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): AddNewMR function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): GetMRByID function without a comment description

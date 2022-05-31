@@ -1,0 +1,13 @@
+---------------------------Static Analysis---------------------------
+Uninitialized storage pointer(USP): result
+---------------------------Dynamic Analysis---------------------------
+---------------------------Test Result---------------------------
+Static cost: 4.843477033s,Dynamic cost: 4.191274982s,Total cost: 9.034752015s
+UBF(2)
+USP(1)
+UPDM(1)
+ELC(2)
+USD(1)
+CHICIU(4)
+6 types,11 vulnerabilities
+

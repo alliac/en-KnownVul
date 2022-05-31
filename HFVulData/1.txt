@@ -1,0 +1,49 @@
+Built-in functions are not recommended(UBF): len
+Built-in functions are not recommended(UBF): append
+Built-in functions are not recommended(UBF): new
+External Library Calling(ELC): github.com/hyperledger/fabric/core/chaincode/shim
+External Library Calling(ELC): github.com/hyperledger/fabric/protos/peer
+Declaration of variables is not recommended in a structure(FD): FoodID
+Declaration of variables is not recommended in a structure(FD): FoodProInfo
+Declaration of variables is not recommended in a structure(FD): FoodIngInfo
+Declaration of variables is not recommended in a structure(FD): FoodLogInfo
+Declaration of variables is not recommended in a structure(FD): FoodName
+Declaration of variables is not recommended in a structure(FD): FoodSpec
+Declaration of variables is not recommended in a structure(FD): FoodMFGDate
+Declaration of variables is not recommended in a structure(FD): FoodEXPDate
+Declaration of variables is not recommended in a structure(FD): FoodLOT
+Declaration of variables is not recommended in a structure(FD): FoodQSID
+Declaration of variables is not recommended in a structure(FD): FoodMFRSName
+Declaration of variables is not recommended in a structure(FD): FoodProPrice
+Declaration of variables is not recommended in a structure(FD): FoodProPlace
+Declaration of variables is not recommended in a structure(FD): IngID
+Declaration of variables is not recommended in a structure(FD): IngName
+Declaration of variables is not recommended in a structure(FD): LogDepartureTm
+Declaration of variables is not recommended in a structure(FD): LogArrivalTm
+Declaration of variables is not recommended in a structure(FD): LogMission
+Declaration of variables is not recommended in a structure(FD): LogDeparturePl
+Declaration of variables is not recommended in a structure(FD): LogDest
+Declaration of variables is not recommended in a structure(FD): LogToSeller
+Declaration of variables is not recommended in a structure(FD): LogStorageTm
+Declaration of variables is not recommended in a structure(FD): LogMOT
+Declaration of variables is not recommended in a structure(FD): LogCopName
+Declaration of variables is not recommended in a structure(FD): LogCost
+There is a range query risks(RQR): GetHistoryForKey
+Uninitialized storage pointer(USP): FoodInfos
+Uninitialized storage pointer(USP): IngInfoitem
+Uninitialized storage pointer(USP): foodAllinfo
+Unused privacy data mechanism(UPDM): it is recommended to use the EMP-toolkit to encrypt the linked data
+Unencrypted sensitive data(USD): crypto is not used
+There is a range query risks(RQR): GetHistoryForKey
+Unhandled errors(UE): defer resultsIterator.Close()
+Unhandled errors(UE): json.Unmarshal(response.Value,&FoodInfos)
+Comment headers insufficient for checking implementation and usage(CHICIU): Init function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): Invoke function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): addProInfo function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): addIngInfo function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): addLogInfo function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): getFoodInfo function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): getProInfo function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): getIngInfo function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): getLogInfo function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): getLogInfo_l function without a comment description

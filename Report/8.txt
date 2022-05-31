@@ -1,0 +1,30 @@
+---------------------------Static Analysis---------------------------
+External Library Calling(ELC): github.com/hyperledger/fabric/core/chaincode/shim
+External Library Calling(ELC): github.com/hyperledger/fabric/protos/peer
+Global variable(GV): [A B]
+Global variable(GV): [Aval Bval]
+Global variable(GV): [err]
+Built-in functions are not recommended(UBF): len
+Unused privacy data mechanism(UPDM): it is recommended to use the EMP-toolkit to encrypt the linked data
+Built-in functions are not recommended(UBF): new
+Unencrypted sensitive data(USD): crypto is not used
+Uninitialized storage pointer(USP): A B
+Uninitialized storage pointer(USP): Aval Bval
+Uninitialized storage pointer(USP): X
+---------------------------Dynamic Analysis---------------------------
+Comment headers insufficient for checking implementation and usage(CHICIU): Init function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): Invoke function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): invoke function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): delete function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): query function without a comment description
+---------------------------Test Result---------------------------
+Static cost: 5.892285256s,Dynamic cost: 4.242207624s,Total cost: 10.13449288s
+UBF(2)
+USP(3)
+GV(3)
+UPDM(1)
+ELC(2)
+USD(1)
+CHICIU(5)
+7 types,17 vulnerabilities
+

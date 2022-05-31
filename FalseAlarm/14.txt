@@ -1,0 +1,18 @@
+---------------------------Static Analysis---------------------------
+Map structure iteration(MSI): [sellerId]
+Map structure iteration(MSI): [buyerId]
+Map structure iteration(MSI): [logisticsProviderId]
+---------------------------Dynamic Analysis---------------------------
+---------------------------Test Result---------------------------
+Static cost: 11.661461085s,Dynamic cost: 4.587651156s,Total cost: 16.249112241s
+UBF(3)
+FD(10)
+MSI(7)
+GV(3)
+RYW(4)
+UPDM(1)
+ELC(2)
+USD(1)
+CHICIU(12)
+9 types,43 vulnerabilities
+

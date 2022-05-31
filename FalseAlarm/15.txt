@@ -1,0 +1,24 @@
+---------------------------Static Analysis---------------------------
+Global variable(GV): [FUNCMAP]
+Map structure iteration(MSI): [id]
+Uninitialized storage pointer(USP): v
+Uninitialized storage pointer(USP): price
+---------------------------Dynamic Analysis---------------------------
+---------------------------Test Result---------------------------
+Static cost: 12.889444802s,Dynamic cost: 846.787089ms,Total cost: 13.736231891s
+UBF(3)
+FD(11)
+MSI(2)
+USP(5)
+GV(5)
+UPDM(1)
+RQR(2)
+ELC(2)
+RNG(1)
+ST(1)
+UE(2)
+USD(1)
+UIA(1)
+CHICIU(18)
+14 types,55 vulnerabilities
+

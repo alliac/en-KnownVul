@@ -1,0 +1,44 @@
+---------------------------Static Analysis---------------------------
+External Library Calling(ELC): github.com/hyperledger/fabric/core/chaincode/shim
+External Library Calling(ELC): github.com/hyperledger/fabric/protos/peer
+Global variable(GV): [ERROR_UNKNOWN_FUNC]
+Global variable(GV): [ERROR_WRONG_ARGS]
+Global variable(GV): [ERROR_SYSTEM]
+Global variable(GV): [ERR_NOT_FOUND]
+Global variable(GV): [ERROR_PUT_STATE]
+Global variable(GV): [namespace]
+Declaration of variables is not recommended in a structure(FD): CustomId
+Declaration of variables is not recommended in a structure(FD): CustomName
+Declaration of variables is not recommended in a structure(FD): SavingsBalance
+Declaration of variables is not recommended in a structure(FD): CheckingBalance
+Built-in functions are not recommended(UBF): len
+Built-in functions are not recommended(UBF): new
+Unused privacy data mechanism(UPDM): it is recommended to use the EMP-toolkit to encrypt the linked data
+---------------------------Dynamic Analysis---------------------------
+UIA: Query function does not check the input arguments
+Comment headers insufficient for checking implementation and usage(CHICIU): Init function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): Invoke function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): CreateAccount function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): DepositChecking function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): WriteCheck function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): TransactSavings function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): SendPayment function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): Amalgamate function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): Query function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): errormsg function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): systemerror function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): hexdigest function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): accountKey function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): loadAccount function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): saveAccount function without a comment description
+---------------------------Test Result---------------------------
+Static cost: 7.448475898s,Dynamic cost: 718.421902ms,Total cost: 8.1668978s
+UBF(2)
+FD(4)
+GV(6)
+UPDM(1)
+ELC(2)
+UIA(1)
+CHICIU(15)
+7 types,31 vulnerabilities
+

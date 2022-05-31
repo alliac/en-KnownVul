@@ -1,0 +1,23 @@
+---------------------------Static Analysis---------------------------
+External Library Calling(ELC): github.com/hyperledger/fabric/core/chaincode/shim
+External Library Calling(ELC): github.com/hyperledger/fabric/protos/peer
+Built-in functions are not recommended(UBF): len
+Unused privacy data mechanism(UPDM): it is recommended to use the EMP-toolkit to encrypt the linked data
+Built-in functions are not recommended(UBF): new
+Unencrypted sensitive data(USD): crypto is not used
+Uninitialized storage pointer(USP): result
+---------------------------Dynamic Analysis---------------------------
+Comment headers insufficient for checking implementation and usage(CHICIU): Init function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): Invoke function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): set function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): get function without a comment description
+---------------------------Test Result---------------------------
+Static cost: 4.843477033s,Dynamic cost: 4.191274982s,Total cost: 9.034752015s
+UBF(2)
+USP(1)
+UPDM(1)
+ELC(2)
+USD(1)
+CHICIU(4)
+6 types,11 vulnerabilities
+

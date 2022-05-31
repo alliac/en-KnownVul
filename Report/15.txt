@@ -1,0 +1,75 @@
+---------------------------Static Analysis---------------------------
+Incorrect use(RNG): math/rand
+Incorrect use(ST): time
+External Library Calling(ELC): github.com/hyperledger/fabric/core/chaincode/shim
+External Library Calling(ELC): github.com/hyperledger/fabric/protos/peer
+Global variable(GV): [OBJECTTYPE_JSON]
+Global variable(GV): [OBJECTTYPE_VEHICLE]
+Global variable(GV): [OBJECTTYPE_LEASE]
+Global variable(GV): [PRIVATE_COLLECTION_LEASE]
+Declaration of variables is not recommended in a structure(FD): ObjectType
+Declaration of variables is not recommended in a structure(FD): CreateTime
+Declaration of variables is not recommended in a structure(FD): Id
+Declaration of variables is not recommended in a structure(FD): Brand
+Declaration of variables is not recommended in a structure(FD): Price
+Declaration of variables is not recommended in a structure(FD): OwnerId
+Declaration of variables is not recommended in a structure(FD): Status
+Declaration of variables is not recommended in a structure(FD): UserId
+Declaration of variables is not recommended in a structure(FD): VehicleId
+Declaration of variables is not recommended in a structure(FD): BeginTime
+Declaration of variables is not recommended in a structure(FD): EndTime
+Global variable(GV): [FUNCMAP]
+Map structure iteration(MSI): [FUNCMAP]
+Built-in functions are not recommended(UBF): len
+Unused privacy data mechanism(UPDM): it is recommended to use the EMP-toolkit to encrypt the linked data
+Built-in functions are not recommended(UBF): new
+There is a range query risks(RQR): GetQueryResult
+Built-in functions are not recommended(UBF): append
+There is a range query risks(RQR): GetHistoryForKey
+Map structure iteration(MSI): [id]
+Unhandled errors(UE): defer stateIterator.Close()
+Unhandled errors(UE): defer historyIterator.Close()
+Unencrypted sensitive data(USD): crypto is not used
+Uninitialized storage pointer(USP): res
+Uninitialized storage pointer(USP): jByte
+Uninitialized storage pointer(USP): j
+Uninitialized storage pointer(USP): v
+Uninitialized storage pointer(USP): price
+---------------------------Dynamic Analysis---------------------------
+UIA: wronglyTxRandValue function does not check the input arguments
+Comment headers insufficient for checking implementation and usage(CHICIU): init function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): Init function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): Invoke function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): createVehicle function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): addVehicle function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): findVehicle function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): deleteVehicle function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): updateVehiclePrice function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): updateVehicleDynPrice function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): wronglyTxRandValue function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): queryVehiclesByBrand function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): queryVehicles function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): joinKVList function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): getVehicleHistory function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): joinKMList function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): createLease function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): addLease function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): findLease function without a comment description
+---------------------------Test Result---------------------------
+Static cost: 12.889444802s,Dynamic cost: 846.787089ms,Total cost: 13.736231891s
+UBF(3)
+FD(11)
+MSI(2)
+USP(5)
+GV(5)
+UPDM(1)
+RQR(2)
+ELC(2)
+RNG(1)
+ST(1)
+UE(2)
+USD(1)
+UIA(1)
+CHICIU(18)
+14 types,55 vulnerabilities
+

@@ -1,0 +1,41 @@
+External Library Calling(ELC): github.com/hyperledger/fabric/core/chaincode/shim
+External Library Calling(ELC): github.com/hyperledger/fabric/protos/peer
+Declaration of variables is not recommended in a structure(FD): Id
+Declaration of variables is not recommended in a structure(FD): Name
+Declaration of variables is not recommended in a structure(FD): Location
+Declaration of variables is not recommended in a structure(FD): Content
+Declaration of variables is not recommended in a structure(FD): WeightInKgs
+Declaration of variables is not recommended in a structure(FD): SellerId
+Declaration of variables is not recommended in a structure(FD): LogisticsProviderId
+Declaration of variables is not recommended in a structure(FD): BuyerId
+Declaration of variables is not recommended in a structure(FD): TemperatureReadings
+Declaration of variables is not recommended in a structure(FD): Status
+Global variable(GV): [logisticsProviderStore]
+Global variable(GV): [shipmentStore]
+Global variable(GV): [sellerStore]
+Global variable(GV): [buyerStore]
+Map structure iteration(MSI): [buyerStore]
+Map structure iteration(MSI): [sellerStore]
+Map structure iteration(MSI): [logisticsProviderStore]
+Map structure iteration(MSI): [shipmentStore]
+Built-in functions are not recommended(UBF): len
+Built-in functions are not recommended(UBF): new
+Built-in functions are not recommended(UBF): make
+Unused privacy data mechanism(UPDM): it is recommended to use the EMP-toolkit to encrypt the linked data
+Read your write(RYW): sellerstore
+Read your write(RYW): buyerstore
+Read your write(RYW): logisticsproviderstore
+Read your write(RYW): shipmentstore
+Unencrypted sensitive data(USD): crypto is not used
+Comment headers insufficient for checking implementation and usage(CHICIU): Init function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): Invoke function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): registerSeller function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): registerBuyer function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): registerLogisticsProvider function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): getSeller function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): getBuyer function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): getLogisticsProvider function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): registerShipment function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): getShipments function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): updateShipmentTemperature function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): updateShipmentStatus function without a comment description

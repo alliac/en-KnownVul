@@ -1,0 +1,32 @@
+Incorrect use(RNG): math/rand
+External Library Calling(ELC): github.com/hyperledger/fabric/core/chaincode/shim
+External Library Calling(ELC): github.com/hyperledger/fabric/protos/peer
+Declaration of variables is not recommended in a structure(FD): Direction
+Declaration of variables is not recommended in a structure(FD): CostMoney
+Declaration of variables is not recommended in a structure(FD): DonationName
+Declaration of variables is not recommended in a structure(FD): ALLMoney
+Declaration of variables is not recommended in a structure(FD): LeftMoney
+Declaration of variables is not recommended in a structure(FD): DealNumbers
+Global variable(GV): [D0]
+Global variable(GV): [D1]
+Global variable(GV): [D2]
+Global variable(GV): [D3]
+Unused privacy data mechanism(UPDM): it is recommended to use the EMP-toolkit to encrypt the linked data
+Built-in functions are not recommended(UBF): len
+Built-in functions are not recommended(UBF): new
+Unhandled errors(UE): json.Unmarshal(cUserValues, &cUser)
+Unhandled errors(UE): defer resultsIter.Close()
+Comment headers insufficient for checking implementation and usage(CHICIU): Sha8 function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): Skey function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): Init function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): Invoke function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): set function without a comment description
+UIA: set function does not check the input arguments
+Comment headers insufficient for checking implementation and usage(CHICIU): get function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): donation function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): queryDealOnce function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): queryDealALL function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): queryUserInfo function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): modelAssign function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): modelRandom function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): donationRules function without a comment description

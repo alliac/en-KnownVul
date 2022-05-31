@@ -1,0 +1,34 @@
+---------------------------Static Analysis---------------------------
+External Library Calling(ELC): github.com/hyperledger/fabric/core/chaincode/shim
+External Library Calling(ELC): github.com/hyperledger/fabric/protos/peer
+Declaration of variables is not recommended in a structure(FD): Make
+Declaration of variables is not recommended in a structure(FD): Model
+Declaration of variables is not recommended in a structure(FD): Colour
+Declaration of variables is not recommended in a structure(FD): Owner
+Built-in functions are not recommended(UBF): len
+Unused privacy data mechanism(UPDM): it is recommended to use the EMP-toolkit to encrypt the linked data
+Built-in functions are not recommended(UBF): new
+Unhandled errors(UE): APIstub.PutState("CAR"+strconv.Itoa(i), carAsBytes)
+Unhandled errors(UE): APIstub.PutState(args[0], carAsBytes)
+Unhandled errors(UE): defer resultsIterator.Close()
+Unhandled errors(UE): json.Unmarshal(carAsBytes, &car)
+Unencrypted sensitive data(USD): crypto is not used
+---------------------------Dynamic Analysis---------------------------
+Comment headers insufficient for checking implementation and usage(CHICIU): Init function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): Invoke function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): queryCar function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): initLedger function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): createCar function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): queryAllCars function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): changeCarOwner function without a comment description
+---------------------------Test Result---------------------------
+Static cost: 6.407793787s,Dynamic cost: 332.108346ms,Total cost: 6.739902133s
+UBF(2)
+FD(4)
+UPDM(1)
+ELC(2)
+UE(4)
+USD(1)
+CHICIU(7)
+7 types,21 vulnerabilities
+

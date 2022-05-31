@@ -1,0 +1,19 @@
+---------------------------Static Analysis---------------------------
+Global variable(GV): [A B]
+Global variable(GV): [Aval Bval]
+Global variable(GV): [err]
+Uninitialized storage pointer(USP): X
+Uninitialized storage pointer(USP): A B
+Uninitialized storage pointer(USP): Aval Bval
+---------------------------Dynamic Analysis---------------------------
+---------------------------Test Result---------------------------
+Static cost: 6.251401359s,Dynamic cost: 4.303701473s,Total cost: 10.555102832s
+UBF(2)
+USP(3)
+GV(3)
+UPDM(1)
+ELC(2)
+USD(1)
+CHICIU(5)
+7 types,17 vulnerabilities
+

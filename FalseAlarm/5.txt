@@ -1,0 +1,17 @@
+---------------------------Static Analysis---------------------------
+Uninitialized storage pointer(USP): name jsonResp
+---------------------------Dynamic Analysis---------------------------
+---------------------------Test Result---------------------------
+Static cost: 12.473066804s,Dynamic cost: 570.415371ms,Total cost: 13.043482175s
+UBF(2)
+FD(5)
+USP(2)
+UPDM(1)
+RQR(2)
+ELC(2)
+ST(1)
+UE(3)
+USD(1)
+CHICIU(12)
+10 types,31 vulnerabilities
+

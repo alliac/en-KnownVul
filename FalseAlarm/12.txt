@@ -1,0 +1,28 @@
+---------------------------Static Analysis---------------------------
+Uninitialized storage pointer(USP): TotalNumber_center
+Uninitialized storage pointer(USP): From_ID
+Uninitialized storage pointer(USP): ID_company
+Uninitialized storage pointer(USP): ID
+Uninitialized storage pointer(USP): RestNumber
+Uninitialized storage pointer(USP): RestNumber_center
+Uninitialized storage pointer(USP): TotalNumber
+Uninitialized storage pointer(USP): Number
+Uninitialized storage pointer(USP): ID_center
+Uninitialized storage pointer(USP): ID_trans
+Uninitialized storage pointer(USP): To_ID
+Uninitialized storage pointer(USP): number
+---------------------------Dynamic Analysis---------------------------
+---------------------------Test Result---------------------------
+Static cost: 20.7562396s,Dynamic cost: 4.812346941s,Total cost: 25.568586541s
+UBF(2)
+FD(10)
+USP(27)
+GV(1)
+UPDM(1)
+ELC(2)
+ST(1)
+USD(1)
+UIA(1)
+CHICIU(15)
+10 types,61 vulnerabilities
+

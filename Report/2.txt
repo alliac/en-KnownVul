@@ -1,0 +1,26 @@
+---------------------------Static Analysis---------------------------
+External Library Calling(ELC): github.com/hyperledger/fabric/core/chaincode/shim
+External Library Calling(ELC): github.com/hyperledger/fabric/protos/peer
+Declaration of variables is not recommended in a structure(FD): Author
+Declaration of variables is not recommended in a structure(FD): CreateTime
+Declaration of variables is not recommended in a structure(FD): Info
+Declaration of variables is not recommended in a structure(FD): Item
+Declaration of variables is not recommended in a structure(FD): Identity
+Declaration of variables is not recommended in a structure(FD): Result
+Built-in functions are not recommended(UBF): len
+Unused privacy data mechanism(UPDM): it is recommended to use the EMP-toolkit to encrypt the linked data
+Built-in functions are not recommended(UBF): new
+Uninitialized storage pointer(USP): req
+---------------------------Dynamic Analysis---------------------------
+Comment headers insufficient for checking implementation and usage(CHICIU): Init function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): Invoke function without a comment description
+---------------------------Test Result---------------------------
+Static cost: 6.045536494s,Dynamic cost: 234.924046ms,Total cost: 6.28046054s
+UBF(2)
+FD(6)
+USP(1)
+UPDM(1)
+ELC(2)
+CHICIU(2)
+6 types,14 vulnerabilities
+

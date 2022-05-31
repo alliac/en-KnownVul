@@ -1,0 +1,77 @@
+---------------------------Static Analysis---------------------------
+Incorrect use(ST): time
+External Library Calling(ELC): github.com/hyperledger/fabric/core/chaincode/shim
+External Library Calling(ELC): github.com/hyperledger/fabric/protos/peer
+Declaration of variables is not recommended in a structure(FD): Name
+Declaration of variables is not recommended in a structure(FD): TotalNumber
+Declaration of variables is not recommended in a structure(FD): RestNumber
+Declaration of variables is not recommended in a structure(FD): ID
+Declaration of variables is not recommended in a structure(FD): Number
+Declaration of variables is not recommended in a structure(FD): FromType
+Declaration of variables is not recommended in a structure(FD): FromID
+Declaration of variables is not recommended in a structure(FD): ToType
+Declaration of variables is not recommended in a structure(FD): ToID
+Declaration of variables is not recommended in a structure(FD): Time
+Global variable(GV): [center]
+Built-in functions are not recommended(UBF): len
+Unused privacy data mechanism(UPDM): it is recommended to use the EMP-toolkit to encrypt the linked data
+Built-in functions are not recommended(UBF): new
+Unencrypted sensitive data(USD): crypto is not used
+Uninitialized storage pointer(USP): TotalNumber_center
+Uninitialized storage pointer(USP): toBank
+Uninitialized storage pointer(USP): bank_info
+Uninitialized storage pointer(USP): trans_to_bank
+Uninitialized storage pointer(USP): From_ID
+Uninitialized storage pointer(USP): ID_company
+Uninitialized storage pointer(USP): center_info
+Uninitialized storage pointer(USP): trans_info
+Uninitialized storage pointer(USP): ID
+Uninitialized storage pointer(USP): company_info
+Uninitialized storage pointer(USP): RestNumber
+Uninitialized storage pointer(USP): RestNumber_center
+Uninitialized storage pointer(USP): TotalNumber
+Uninitialized storage pointer(USP): bank
+Uninitialized storage pointer(USP): trans
+Uninitialized storage pointer(USP): Number
+Uninitialized storage pointer(USP): center
+Uninitialized storage pointer(USP): toCP
+Uninitialized storage pointer(USP): bankFrom
+Uninitialized storage pointer(USP): ID_center
+Uninitialized storage pointer(USP): cpTo
+Uninitialized storage pointer(USP): bank_to_cp
+Uninitialized storage pointer(USP): company
+Uninitialized storage pointer(USP): ID_trans
+Uninitialized storage pointer(USP): fromCP
+Uninitialized storage pointer(USP): To_ID
+Uninitialized storage pointer(USP): number
+---------------------------Dynamic Analysis---------------------------
+UIA: invoke function does not check the input arguments
+Comment headers insufficient for checking implementation and usage(CHICIU): Init function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): CreateBank function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): CreateCompany function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): IssueCoin function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): issueCoinToBank function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): issueCoinToCp function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): getBanks function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): getCompanys function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): getTransactions function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): getCenterBank function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): transfer function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): delete function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): Invoke function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): invoke function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): query function without a comment description
+---------------------------Test Result---------------------------
+Static cost: 20.7562396s,Dynamic cost: 4.812346941s,Total cost: 25.568586541s
+UBF(2)
+FD(10)
+USP(27)
+GV(1)
+UPDM(1)
+ELC(2)
+ST(1)
+USD(1)
+UIA(1)
+CHICIU(15)
+10 types,61 vulnerabilities
+

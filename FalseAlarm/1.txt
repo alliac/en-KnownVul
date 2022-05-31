@@ -1,0 +1,14 @@
+---------------------------Static Analysis---------------------------
+---------------------------Dynamic Analysis---------------------------
+---------------------------Test Result---------------------------
+Static cost: 11.147247471s,Dynamic cost: 8.449864142s,Total cost: 19.597111613s
+UBF(3)
+FD(25)
+USP(3)
+UPDM(1)
+RQR(1)
+ELC(2)
+UE(2)
+USD(1)
+CHICIU(10)
+9 types,48 vulnerabilities

@@ -1,0 +1,15 @@
+Built-in functions are not recommended(UBF): len
+Built-in functions are not recommended(UBF): new
+Declaration of variables is not recommended in a structure(FD): Author
+Declaration of variables is not recommended in a structure(FD): CreateTime
+Declaration of variables is not recommended in a structure(FD): Info
+Declaration of variables is not recommended in a structure(FD): Item
+Declaration of variables is not recommended in a structure(FD): Identity
+Declaration of variables is not recommended in a structure(FD): Result
+External Library Calling(ELC): github.com/hyperledger/fabric/core/chaincode/shim
+External Library Calling(ELC): github.com/hyperledger/fabric/protos/peer
+Uninitialized storage pointer(USP): req
+Uninitialized storage pointer(USP): item
+Unused privacy data mechanism(UPDM): it is recommended to use the EMP-toolkit to encrypt the linked data
+Comment headers insufficient for checking implementation and usage(CHICIU): Init function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): Invoke function without a comment description

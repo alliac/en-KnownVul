@@ -1,0 +1,50 @@
+---------------------------Static Analysis---------------------------
+Incorrect use(RNG): math/rand
+External Library Calling(ELC): github.com/hyperledger/fabric/core/chaincode/shim
+External Library Calling(ELC): github.com/hyperledger/fabric/protos/peer
+Declaration of variables is not recommended in a structure(FD): Direction
+Declaration of variables is not recommended in a structure(FD): CostMoney
+Declaration of variables is not recommended in a structure(FD): DonationName
+Declaration of variables is not recommended in a structure(FD): ALLMoney
+Declaration of variables is not recommended in a structure(FD): LeftMoney
+Declaration of variables is not recommended in a structure(FD): DealNumbers
+Global variable(GV): [D0]
+Global variable(GV): [D1]
+Global variable(GV): [D2]
+Global variable(GV): [D3]
+Unused privacy data mechanism(UPDM): it is recommended to use the EMP-toolkit to encrypt the linked data
+Built-in functions are not recommended(UBF): len
+Built-in functions are not recommended(UBF): new
+Unhandled errors(UE): json.Unmarshal(cUserValues, &cUser)
+Unhandled errors(UE): defer resultsIter.Close()
+Uninitialized storage pointer(USP): D3
+Uninitialized storage pointer(USP): D1
+Uninitialized storage pointer(USP): D0
+Uninitialized storage pointer(USP): D2
+---------------------------Dynamic Analysis---------------------------
+Comment headers insufficient for checking implementation and usage(CHICIU): Sha8 function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): Skey function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): Init function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): Invoke function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): set function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): get function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): donation function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): queryDealOnce function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): queryDealALL function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): queryUserInfo function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): modelAssign function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): modelRandom function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): donationRules function without a comment description
+---------------------------Test Result---------------------------
+Static cost: 10.739891709s,Dynamic cost: 635.676644ms,Total cost: 11.375568353s
+UBF(2)
+FD(6)
+USP(4)
+GV(4)
+UPDM(1)
+ELC(2)
+RNG(1)
+UE(2)
+CHICIU(13)
+9 types,35 vulnerabilities
+

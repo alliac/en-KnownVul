@@ -1,0 +1,30 @@
+Incorrect use(ST): time
+External Library Calling(ELC): github.com/hyperledger/fabric/core/chaincode/shim
+External Library Calling(ELC): github.com/hyperledger/fabric/protos/peer
+Declaration of variables is not recommended in a structure(FD): ObjectType
+Declaration of variables is not recommended in a structure(FD): Name
+Declaration of variables is not recommended in a structure(FD): Color
+Declaration of variables is not recommended in a structure(FD): Size
+Declaration of variables is not recommended in a structure(FD): Owner
+Built-in functions are not recommended(UBF): new
+Built-in functions are not recommended(UBF): len
+There is a range query risks(RQR): GetQueryResult
+There is a range query risks(RQR): GetHistoryForKey
+Unhandled errors(UE): stub.PutState(colorNameIndexKey, value)
+Unhandled errors(UE): defer resultsIterator.Close()
+Unhandled errors(UE): defer coloredMarbleResultsIterator.Close()
+Unencrypted sensitive data(USD): crypto is not used
+Unused privacy data mechanism(UPDM): it is recommended to use the EMP-toolkit to encrypt the linked data
+Uninitialized storage pointer(USP): marbleJSON
+Comment headers insufficient for checking implementation and usage(CHICIU): Init function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): Invoke function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): initMarble function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): readMarble function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): delete function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): transferMarble function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): getMarblesByRange function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): transferMarblesBasedOnColor function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): queryMarblesByOwner function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): queryMarbles function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): getQueryResultForQueryString function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): getHistoryForMarble function without a comment description

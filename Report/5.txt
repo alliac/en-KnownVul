@@ -1,0 +1,47 @@
+---------------------------Static Analysis---------------------------
+Incorrect use(ST): time
+External Library Calling(ELC): github.com/hyperledger/fabric/core/chaincode/shim
+External Library Calling(ELC): github.com/hyperledger/fabric/protos/peer
+Declaration of variables is not recommended in a structure(FD): ObjectType
+Declaration of variables is not recommended in a structure(FD): Name
+Declaration of variables is not recommended in a structure(FD): Color
+Declaration of variables is not recommended in a structure(FD): Size
+Declaration of variables is not recommended in a structure(FD): Owner
+Built-in functions are not recommended(UBF): new
+Built-in functions are not recommended(UBF): len
+Unused privacy data mechanism(UPDM): it is recommended to use the EMP-toolkit to encrypt the linked data
+There is a range query risks(RQR): GetQueryResult
+There is a range query risks(RQR): GetHistoryForKey
+Unhandled errors(UE): stub.PutState(colorNameIndexKey, value)
+Unhandled errors(UE): defer resultsIterator.Close()
+Unhandled errors(UE): defer coloredMarbleResultsIterator.Close()
+Unencrypted sensitive data(USD): crypto is not used
+Uninitialized storage pointer(USP): marbleJSON
+Uninitialized storage pointer(USP): name jsonResp
+---------------------------Dynamic Analysis---------------------------
+Comment headers insufficient for checking implementation and usage(CHICIU): Init function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): Invoke function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): initMarble function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): readMarble function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): delete function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): transferMarble function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): getMarblesByRange function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): transferMarblesBasedOnColor function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): queryMarblesByOwner function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): queryMarbles function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): getQueryResultForQueryString function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): getHistoryForMarble function without a comment description
+---------------------------Test Result---------------------------
+Static cost: 12.473066804s,Dynamic cost: 570.415371ms,Total cost: 13.043482175s
+UBF(2)
+FD(5)
+USP(2)
+UPDM(1)
+RQR(2)
+ELC(2)
+ST(1)
+UE(3)
+USD(1)
+CHICIU(12)
+10 types,31 vulnerabilities
+

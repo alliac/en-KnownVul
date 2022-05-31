@@ -1,0 +1,19 @@
+---------------------------Static Analysis---------------------------
+Uninitialized storage pointer(USP): D3
+Uninitialized storage pointer(USP): D1
+Uninitialized storage pointer(USP): D0
+Uninitialized storage pointer(USP): D2
+---------------------------Dynamic Analysis---------------------------
+---------------------------Test Result---------------------------
+Static cost: 10.739891709s,Dynamic cost: 635.676644ms,Total cost: 11.375568353s
+UBF(2)
+FD(6)
+USP(4)
+GV(4)
+UPDM(1)
+ELC(2)
+RNG(1)
+UE(2)
+CHICIU(13)
+9 types,35 vulnerabilities
+

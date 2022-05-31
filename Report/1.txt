@@ -1,0 +1,62 @@
+---------------------------Static Analysis---------------------------
+External Library Calling(ELC): github.com/hyperledger/fabric/core/chaincode/shim
+External Library Calling(ELC): github.com/hyperledger/fabric/protos/peer
+Declaration of variables is not recommended in a structure(FD): FoodID
+Declaration of variables is not recommended in a structure(FD): FoodProInfo
+Declaration of variables is not recommended in a structure(FD): FoodIngInfo
+Declaration of variables is not recommended in a structure(FD): FoodLogInfo
+Declaration of variables is not recommended in a structure(FD): FoodName
+Declaration of variables is not recommended in a structure(FD): FoodSpec
+Declaration of variables is not recommended in a structure(FD): FoodMFGDate
+Declaration of variables is not recommended in a structure(FD): FoodEXPDate
+Declaration of variables is not recommended in a structure(FD): FoodLOT
+Declaration of variables is not recommended in a structure(FD): FoodQSID
+Declaration of variables is not recommended in a structure(FD): FoodMFRSName
+Declaration of variables is not recommended in a structure(FD): FoodProPrice
+Declaration of variables is not recommended in a structure(FD): FoodProPlace
+Declaration of variables is not recommended in a structure(FD): IngID
+Declaration of variables is not recommended in a structure(FD): IngName
+Declaration of variables is not recommended in a structure(FD): LogDepartureTm
+Declaration of variables is not recommended in a structure(FD): LogArrivalTm
+Declaration of variables is not recommended in a structure(FD): LogMission
+Declaration of variables is not recommended in a structure(FD): LogDeparturePl
+Declaration of variables is not recommended in a structure(FD): LogDest
+Declaration of variables is not recommended in a structure(FD): LogToSeller
+Declaration of variables is not recommended in a structure(FD): LogStorageTm
+Declaration of variables is not recommended in a structure(FD): LogMOT
+Declaration of variables is not recommended in a structure(FD): LogCopName
+Declaration of variables is not recommended in a structure(FD): LogCost
+Built-in functions are not recommended(UBF): len
+Unused privacy data mechanism(UPDM): it is recommended to use the EMP-toolkit to encrypt the linked data
+Built-in functions are not recommended(UBF): append
+There is a range query risks(RQR): GetHistoryForKey
+Built-in functions are not recommended(UBF): new
+Unhandled errors(UE): defer resultsIterator.Close()
+Unhandled errors(UE): json.Unmarshal(response.Value,&FoodInfos)
+Unencrypted sensitive data(USD): crypto is not used
+Uninitialized storage pointer(USP): FoodInfos
+Uninitialized storage pointer(USP): IngInfoitem
+Uninitialized storage pointer(USP): foodAllinfo
+---------------------------Dynamic Analysis---------------------------
+Comment headers insufficient for checking implementation and usage(CHICIU): Init function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): Invoke function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): addProInfo function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): addIngInfo function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): addLogInfo function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): getFoodInfo function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): getProInfo function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): getIngInfo function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): getLogInfo function without a comment description
+Comment headers insufficient for checking implementation and usage(CHICIU): getLogInfo_l function without a comment description
+---------------------------Test Result---------------------------
+Static cost: 11.147247471s,Dynamic cost: 8.449864142s,Total cost: 19.597111613s
+UBF(3)
+FD(25)
+USP(3)
+UPDM(1)
+RQR(1)
+ELC(2)
+UE(2)
+USD(1)
+CHICIU(10)
+9 types,48 vulnerabilities
